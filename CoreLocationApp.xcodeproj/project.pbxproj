@@ -12,16 +12,18 @@
 		871019131DBBBD9100BE890F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871019111DBBBD9100BE890F /* Main.storyboard */; };
 		871019151DBBBD9100BE890F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 871019141DBBBD9100BE890F /* Assets.xcassets */; };
 		871019181DBBBD9100BE890F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 871019161DBBBD9100BE890F /* LaunchScreen.storyboard */; };
+		871019211DBBC52100BE890F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 871019201DBBC52100BE890F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8710190A1DBBBD9100BE890F /* CoreLocation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8710190A1DBBBD9100BE890F /* CoreLocationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreLocationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8710190D1DBBBD9100BE890F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8710190F1DBBBD9100BE890F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		871019121DBBBD9100BE890F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		871019141DBBBD9100BE890F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		871019171DBBBD9100BE890F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		871019191DBBBD9100BE890F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		871019201DBBC52100BE890F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				871019211DBBC52100BE890F /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,13 +43,14 @@
 			children = (
 				8710190C1DBBBD9100BE890F /* CoreLocation */,
 				8710190B1DBBBD9100BE890F /* Products */,
+				8710191F1DBBC52100BE890F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		8710190B1DBBBD9100BE890F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8710190A1DBBBD9100BE890F /* CoreLocation.app */,
+				8710190A1DBBBD9100BE890F /* CoreLocationApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,12 +68,20 @@
 			path = CoreLocation;
 			sourceTree = "<group>";
 		};
+		8710191F1DBBC52100BE890F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				871019201DBBC52100BE890F /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		871019091DBBBD9100BE890F /* CoreLocation */ = {
+		871019091DBBBD9100BE890F /* CoreLocationApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8710191C1DBBBD9100BE890F /* Build configuration list for PBXNativeTarget "CoreLocation" */;
+			buildConfigurationList = 8710191C1DBBBD9100BE890F /* Build configuration list for PBXNativeTarget "CoreLocationApp" */;
 			buildPhases = (
 				871019061DBBBD9100BE890F /* Sources */,
 				871019071DBBBD9100BE890F /* Frameworks */,
@@ -79,9 +91,9 @@
 			);
 			dependencies = (
 			);
-			name = CoreLocation;
+			name = CoreLocationApp;
 			productName = CoreLocation;
-			productReference = 8710190A1DBBBD9100BE890F /* CoreLocation.app */;
+			productReference = 8710190A1DBBBD9100BE890F /* CoreLocationApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +113,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 871019051DBBBD9100BE890F /* Build configuration list for PBXProject "CoreLocation" */;
+			buildConfigurationList = 871019051DBBBD9100BE890F /* Build configuration list for PBXProject "CoreLocationApp" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -114,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				871019091DBBBD9100BE890F /* CoreLocation */,
+				871019091DBBBD9100BE890F /* CoreLocationApp */,
 			);
 		};
 /* End PBXProject section */
@@ -284,7 +296,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		871019051DBBBD9100BE890F /* Build configuration list for PBXProject "CoreLocation" */ = {
+		871019051DBBBD9100BE890F /* Build configuration list for PBXProject "CoreLocationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8710191A1DBBBD9100BE890F /* Debug */,
@@ -293,7 +305,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8710191C1DBBBD9100BE890F /* Build configuration list for PBXNativeTarget "CoreLocation" */ = {
+		8710191C1DBBBD9100BE890F /* Build configuration list for PBXNativeTarget "CoreLocationApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8710191D1DBBBD9100BE890F /* Debug */,
